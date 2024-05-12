@@ -1,0 +1,14 @@
+import tkinter as tk
+from tkinter import ttk
+
+
+root = tk.Tk()
+root.title('BTE - Biology To Education')
+root.geometry('1000x800')
+root.resizable(True, True)
+
+frameEsquerda = tk.Frame(root, bg="#78C245", width=200)
+frameEsquerda.pack(side="left", fill="y")
+
+root.mainloop()
+
