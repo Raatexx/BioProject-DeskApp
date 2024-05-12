@@ -4,7 +4,7 @@ from tkinter import ttk
 
 root = tk.Tk()
 root.title('BTE - Biology To Education')
-root.geometry('1000x800')
+root.geometry('800x600')
 root.resizable(True, True)
 
 frameEsquerda = tk.Frame(root, bg="#78C245", width=200)
