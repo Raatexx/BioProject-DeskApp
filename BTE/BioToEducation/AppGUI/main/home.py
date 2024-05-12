@@ -10,7 +10,7 @@ root.resizable(True, True)
 frameEsquerda = tk.Frame(root, bg="#78C245", width=200)
 frameEsquerda.pack(side="left", fill="y")
 
-logo = Image.open()
+logo = Image.open("")
 
 root.mainloop()
 
