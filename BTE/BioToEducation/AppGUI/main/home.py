@@ -8,12 +8,12 @@ root.geometry('800x600')
 root.resizable(True, True)
 
 # Criação do frame da esquerda
-frameEsquerda = tk.Frame(root, bg="#78C245", width=300, height=600)
+frameEsquerda = tk.Frame(root, bg="#78C245", width=300, height=600, highlightbackground="black", highlightthickness=1)
 frameEsquerda.pack(side="left", fill="y")
 
-# Logo Bte
+# Imagens
 logo = Image.open(r"C:\Users\Pedro\Desktop\BioProject-DeskApp\BTE\BioToEducation\AppGUI\source\Logo.png")
-logo = logo.resize((120, 120))
+logo = logo.resize((140, 140))
 logoTk = ImageTk.PhotoImage(logo) 
 
 home = Image.open(r"C:\Users\Pedro\Desktop\BioProject-DeskApp\BTE\BioToEducation\AppGUI\source\Home.png")
@@ -35,29 +35,29 @@ comparisonTk = ImageTk.PhotoImage(comparison)
 # Calculo para posicionar a imagem no meio
 alturaImagem = logoTk.height()
 alturaFrame = frameEsquerda.winfo_height()
-alturaTotal = 120 + 45*4
-espaco = (alturaFrame - alturaTotal) % 2
+alturaTotal = 48
+espaco = (alturaTotal - alturaFrame) // 2
 
 # Alinhando ao frame da esquerda
 label = tk.Label(frameEsquerda, image=logoTk, bg="#78C245")
 label.image = logoTk
-label.pack(pady=espaco)
+label.pack(fil="y")
 
 botaoHome = tk.Button(frameEsquerda, image=homeTk, bg="#78C245")
 botaoHome.image = homeTk
-botaoHome.pack(pady=espaco)
+botaoHome.pack(expand=True)
 
 botaoDna = tk.Button(frameEsquerda, image=dnaTk, bg="#78C245")
 botaoDna.image = dnaTk
-botaoDna.pack(pady=espaco)
+botaoDna.pack(expand=True)
 
 botaoRna = tk.Button(frameEsquerda, image=rnaTk, bg="#78C245")
 botaoRna.image = rnaTk
-botaoRna.pack(pady=espaco)
+botaoRna.pack(expand=True)
 
 botaoComparison = tk.Button(frameEsquerda, image=comparisonTk, bg="#78C245")
 botaoComparison.image = comparisonTk
-botaoComparison.pack(pady=espaco)
+botaoComparison.pack(expand=True)
 
 
 root.mainloop()
