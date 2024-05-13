@@ -32,30 +32,24 @@ comparison = Image.open(r"C:\Users\Pedro\Desktop\BioProject-DeskApp\BTE\BioToEdu
 comparison = comparison.resize((45, 45))
 comparisonTk = ImageTk.PhotoImage(comparison)
 
-# Calculo para posicionar a imagem no meio
-alturaImagem = logoTk.height()
-alturaFrame = frameEsquerda.winfo_height()
-alturaTotal = 48
-espaco = (alturaTotal - alturaFrame) // 2
-
 # Alinhando ao frame da esquerda
 label = tk.Label(frameEsquerda, image=logoTk, bg="#78C245")
 label.image = logoTk
 label.pack(fil="y")
 
-botaoHome = tk.Button(frameEsquerda, image=homeTk, bg="#78C245")
+botaoHome = tk.Button(frameEsquerda, image=homeTk, bg="#78C245", relief="flat")
 botaoHome.image = homeTk
 botaoHome.pack(expand=True)
 
-botaoDna = tk.Button(frameEsquerda, image=dnaTk, bg="#78C245")
+botaoDna = tk.Button(frameEsquerda, image=dnaTk, bg="#78C245", relief="flat")
 botaoDna.image = dnaTk
 botaoDna.pack(expand=True)
 
-botaoRna = tk.Button(frameEsquerda, image=rnaTk, bg="#78C245")
+botaoRna = tk.Button(frameEsquerda, image=rnaTk, bg="#78C245", relief="flat")
 botaoRna.image = rnaTk
 botaoRna.pack(expand=True)
 
-botaoComparison = tk.Button(frameEsquerda, image=comparisonTk, bg="#78C245")
+botaoComparison = tk.Button(frameEsquerda, image=comparisonTk, bg="#78C245", relief="flat")
 botaoComparison.image = comparisonTk
 botaoComparison.pack(expand=True)
 
