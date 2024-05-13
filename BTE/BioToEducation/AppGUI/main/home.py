@@ -16,7 +16,7 @@ logoTk = ImageTk.PhotoImage(logo)
 # Calculo para posicionar a imagem no meio
 alturaImagem = logoTk.height()
 alturaFrame = frameEsquerda.winfo_height()
-espaco = (alturaFrame - alturaImagem) // 2
+espaco = (alturaFrame - alturaImagem) % 2
 
 label = tk.Label(frameEsquerda, image=logoTk, bg="#78C245")
 label.image = logoTk
