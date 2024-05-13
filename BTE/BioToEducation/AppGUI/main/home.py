@@ -17,19 +17,19 @@ logo = logo.resize((140, 140))
 logoTk = ImageTk.PhotoImage(logo) 
 
 home = Image.open(r"C:\Users\Pedro\Desktop\BioProject-DeskApp\BTE\BioToEducation\AppGUI\source\Home.png")
-home = home.resize((45, 45))
+home = home.resize((40, 40))
 homeTk = ImageTk.PhotoImage(home)
 
 dna = Image.open(r"C:\Users\Pedro\Desktop\BioProject-DeskApp\BTE\BioToEducation\AppGUI\source\Dna.png")
-dna = dna.resize((45, 45))
+dna = dna.resize((40, 40))
 dnaTk = ImageTk.PhotoImage(dna)
 
 rna = Image.open(r"C:\Users\Pedro\Desktop\BioProject-DeskApp\BTE\BioToEducation\AppGUI\source\Rna.png")
-rna = rna.resize((45, 45))
+rna = rna.resize((40, 40))
 rnaTk = ImageTk.PhotoImage(rna)
 
 comparison = Image.open(r"C:\Users\Pedro\Desktop\BioProject-DeskApp\BTE\BioToEducation\AppGUI\source\Comparison.png")
-comparison = comparison.resize((45, 45))
+comparison = comparison.resize((40, 40))
 comparisonTk = ImageTk.PhotoImage(comparison)
 
 # Alinhando ao frame da esquerda
