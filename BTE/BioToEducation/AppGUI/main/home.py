@@ -37,22 +37,53 @@ label = tk.Label(frameEsquerda, image=logoTk, bg="#78C245")
 label.image = logoTk
 label.pack(fil="y")
 
-botaoHome = tk.Button(frameEsquerda, image=homeTk, bg="#78C245", relief="flat")
+# Definindo funções dos botões
+
+botaoHome = tk.Button(
+    frameEsquerda, 
+    image=homeTk, 
+    bg="#78C245", 
+    relief="flat", 
+    bd=0,
+    command=aoClicarHome
+    )
+
 botaoHome.image = homeTk
 botaoHome.pack(expand=True)
 
-botaoDna = tk.Button(frameEsquerda, image=dnaTk, bg="#78C245", relief="flat")
+botaoDna = tk.Button(
+    frameEsquerda,
+    image=dnaTk,
+    bg="#78C245", 
+    relief="flat", 
+    bd=0
+    )
+
 botaoDna.image = dnaTk
 botaoDna.pack(expand=True)
 
-botaoRna = tk.Button(frameEsquerda, image=rnaTk, bg="#78C245", relief="flat")
+botaoRna = tk.Button(
+    frameEsquerda, 
+    image=rnaTk, 
+    bg="#78C245", 
+    relief="flat",
+    bd=0
+    )
+
 botaoRna.image = rnaTk
 botaoRna.pack(expand=True)
 
-botaoComparison = tk.Button(frameEsquerda, image=comparisonTk, bg="#78C245", relief="flat")
+botaoComparison = tk.Button(
+    frameEsquerda, 
+    image=comparisonTk, 
+    bg="#78C245", 
+    relief="flat",
+    bd=0,
+    fg="#78C245"
+    )
+
 botaoComparison.image = comparisonTk
 botaoComparison.pack(expand=True)
-
 
 root.mainloop()
 
