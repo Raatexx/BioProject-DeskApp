@@ -1,4 +1,4 @@
-# BioProject-DeskApp
+# BioProject-DeskApp With Tkinter
  This action was driven by the possible greater ease of creating a fully desktop app
 
 ## Collaboration
